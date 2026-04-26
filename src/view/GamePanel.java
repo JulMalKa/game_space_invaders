@@ -1,7 +1,13 @@
+package view;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+
+import model.Alien;
+import model.Bullet;
+import model.Player;
 
 public class GamePanel extends JPanel{
     private int aliensCount;
@@ -48,7 +54,7 @@ public class GamePanel extends JPanel{
             for (int i = 0; i < aliensCount; i++) {
                 int x = 50 + i * (Alien.getWidth() + 10);
                 int y = 50 + row * (Alien.getHeight() + 10);
-                aliens.add(new Alien(x, y, "greenAlien.png"));
+                aliens.add(new Alien(x, y, "src/resources/greenAlien.png"));
             }
         }
 

@@ -1,3 +1,5 @@
+package view;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -7,7 +9,7 @@ public class WelcomePanel extends JPanel {
     public WelcomePanel(GameFrame parent) {
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(GameFrame.WIDTH, GameFrame.HEIGHT));
-        ImageIcon img = new ImageIcon("welcome.png");
+        ImageIcon img = new ImageIcon("src/resources/welcome.png");
         JLabel imageLabel = new JLabel(img);
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
         imageLabel.setVerticalAlignment(SwingConstants.CENTER);

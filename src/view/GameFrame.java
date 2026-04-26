@@ -1,3 +1,7 @@
+package view;
+
+import model.HighScore;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Arrays;
@@ -45,7 +49,7 @@ public class GameFrame extends JFrame {
     }
 
     public void showPanel(String name) {
-        cardLayout.show(mainPanel, name); //na main panelu GameFrame wyswietlamy wybrany JPanel. metoda uzywana przy tworzeniu kolejnych paneli
+        cardLayout.show(mainPanel, name); //na main panelu view.GameFrame wyswietlamy wybrany JPanel. metoda uzywana przy tworzeniu kolejnych paneli
     }                                 //pokazanie na podstawie String name ze wzgeldu na wymaganie String w metodzie show. celem jest identyfikacja panelu po nazwie
 
 
@@ -58,7 +62,7 @@ public class GameFrame extends JFrame {
 
     public void createWelcomePanel(){
         checkPanelDuplicate("welcomePanel");
-        welcomePanel = new WelcomePanel(this); //ten GameFrame jest podawany w konstruktorze kazdego panelu jako parent
+        welcomePanel = new WelcomePanel(this); //ten view.GameFrame jest podawany w konstruktorze kazdego panelu jako parent
         mainPanel.add(welcomePanel, "welcomePanel");
         showPanel("welcomePanel");
     }

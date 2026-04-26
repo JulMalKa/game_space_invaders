@@ -1,3 +1,5 @@
+package view;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -23,18 +25,18 @@ public class StartPanel extends JPanel {
 
 
         // Ship
-        this.selectedShipPath = "pinkShip.png"; //domyslna wartosc
+        this.selectedShipPath = "src/resources/pinkShip.png"; //domyslna wartosc
         JPanel shipPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         JLabel shipLabel = new JLabel("Pick a ship:");
         String[] imagePaths = new String[] {
-                "blueShip.png",
-                "greenShip.png",
-                "pinkShip.png"
+                "src/resources/blueShip.png",
+                "src/resources/greenShip.png",
+                "src/resources/pinkShip.png"
         };
         JComboBox<ImageIcon> imageSelector = new JComboBox<>(new ImageIcon[] {
-                resizeIcon("blueShip.png", 100, 40),
-                resizeIcon("greenShip.png", 100, 40),
-                resizeIcon("pinkShip.png", 100, 40)
+                resizeIcon("src/resources/blueShip.png", 100, 40),
+                resizeIcon("src/resources/greenShip.png", 100, 40),
+                resizeIcon("src/resources/pinkShip.png", 100, 40)
         });
         imageSelector.setPreferredSize(new Dimension(130, 50));
         imageSelector.addActionListener(e -> {

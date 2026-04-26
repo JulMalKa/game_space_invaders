@@ -1,3 +1,7 @@
+package view;
+
+import model.HighScore;
+
 import javax.swing.*;
 import java.awt.*;
 

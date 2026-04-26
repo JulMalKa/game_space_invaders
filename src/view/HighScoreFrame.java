@@ -1,5 +1,8 @@
+package view;
+
 import javax.swing.*;
 import java.awt.*;
+import model.HighScore;
 
 public class HighScoreFrame extends JFrame {
 

@@ -1,3 +1,5 @@
+package model;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -7,7 +9,7 @@ public class HighScore {
 
     private String nick;
     private int score;
-    private static String filePath = "highScores.txt";
+    private static String filePath = "resources/highScores.txt";
     private static final List<HighScore> highScores = new ArrayList<>();
 
     public HighScore(String nick, int score) {
@@ -36,7 +38,7 @@ public class HighScore {
         }
     }
 
-    public static void WriteBestScoresToFile(){   //aktualizacja, wywoluje sie po utworzeniu nowego wyniku w EndPanel
+    public static void WriteBestScoresToFile(){   //aktualizacja, wywoluje sie po utworzeniu nowego wyniku w view.EndPanel
         try {
             File file = new File(filePath);
             BufferedWriter bw = new BufferedWriter(new FileWriter(file, false));

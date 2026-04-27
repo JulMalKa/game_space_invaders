@@ -1,25 +1,24 @@
 # Space Invaders
 
-Desktopowa gra inspirowana klasycznym Space Invaders, napisana w Javie z użyciem biblioteki Swing.
+A desktop game inspired by the classic Space Invaders, written in Java using the Swing library.
 
-## Funkcje
+## Features
+* **Ship Control:** Smooth movement and shooting at incoming aliens.
+* **Customization:** Choose your ship's skin before starting the game.
+* **High Scores:** Track the best results in the high scores table.
+* **Game Screens:** Includes Welcome, Rules, and Game Over screens.
 
-- Sterowanie statkiem i strzelanie do kosmitów
-- Wybór skórki statku przed rozpoczęciem gry
-- Tabela najlepszych wyników (high scores)
-- Ekrany: powitalny, zasad gry oraz końca rozgrywki
-
-## Technologie
+## Technologies
 
 - Java
 - Java Swing
 
-## Uruchomienie
+## How to run
 
-Sklonuj repozytorium i uruchom projekt w IntelliJ IDEA lub innym IDE obsługującym Javę.
+clone the repository:
 
 ```bash
 git clone https://github.com/JulMalKa/game_space_invaders.git
 ```
 
-Następnie uruchom klasę `Main`.
+Run the main class to start the game.
